@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Yanjiuseng</string>
+
+    <string name="action_settings">Settings</string>
+	
+	<!-- appstart用到的字符串 -->
+	<string name="appstart_login">登录</string>
+	<string name="appstart_register">注册</string>
+
+	<!-- login用到的字符串 -->
+	<string name="login_forgetPwd">忘记密码</string>
+
+	<!-- register用到的字符串 -->
+		<!-- 欢迎区域 -->
+	<string name="register_welcome1">学术圈</string>
+	<string name="register_welcome2">与世界分享</string>
+	<string name="register_welcome3">你的知识、经验和见解</string>
+		<!-- 注册信息区域 -->
+	<string name="register_name">姓名</string>
+	<string name="register_phone">中国大陆手机号</string>
+	<string name="register_pwd">密码</string>
+	<string name="register_regiButton">注册</string>
+		<!-- 第三方账号登录区域 -->
+	<string name="register_thirdPartyWelcome">登录学术圈账号</string>
+	<string name="register_thirdPartyRegister">社交账号注册</string>
+	<string name="register_thirdParty1">QQ</string>
+	<string name="register_thirdParty2">微信</string>
+	<string name="register_thirdParty3">新浪微博</string>
+    <string name="title_activity_register">register</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_verify_phone_code">VerifyPhoneCodeActivity</string>
+
+	<!-- verifyphonecode用到的字符串 -->
+		<!-- 顶部导航栏区域 -->
+	<string name="verifyphonecode_title">请输入语音验证码</string>
+
+	<!-- majorchoosing用到的字符串 -->
+		<!-- 顶部导航栏区域 -->
+    <string name="majorchoosing_title">选择专业</string>
+    <string name="majorchoosing_nextStep">下一步</string>
+	<string name="title_activity_major_choosing">title_activity_major_choosing</string>
+		<!-- 输入区域 -->
+	<string name="majorchoosing_subject">学科</string>
+	<string name="majorchoosing_major">专业</string>
+		<!-- 滚动选择器确认区域 -->
+	<string name="majorchoosing_cancel">取消</string>
+	<string name="majorchoosing_finish">完成</string>
+
+</resources>

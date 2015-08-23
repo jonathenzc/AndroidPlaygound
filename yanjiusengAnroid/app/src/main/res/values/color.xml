@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+    <color name="red">#FF0000</color>  
+	<!-- register使用到的颜色-->
+	<color name="skyblue">#0463c1</color>
+	<color name="lightBlue">#6494d9</color>
+	<color name="white">#ffffff</color>
+	<color name="darkGrey">#9b9b9b</color>
+	<color name="lightGrey">#c2c2c2</color>
+	<color name="black">#010101</color>
+
+
+</resources>

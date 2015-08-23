@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- 标题布局 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/verifyphonecode_topMargin"
+        android:layout_marginLeft="@dimen/verifyphonecode_leftMargin"
+        android:layout_marginRight="@dimen/verifyphonecode_rightMargin"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/backbtn"
+            android:src="@drawable/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"/> <!-- 图片按钮透明 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="@string/verifyphonecode_title"
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:src="@drawable/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <!-- 提示语 -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="语音验证码已发送至 请注意查收"
+        android:layout_marginTop="@dimen/verifyphonecode_topMargin"
+        android:gravity="center"
+        android:textColor="@color/darkGrey"/>
+
+    <!-- 验证码编辑栏 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/verifyphonecode_topMargin"
+        android:layout_marginLeft="@dimen/verifyphonecode_leftMargin"
+        android:layout_marginRight="@dimen/verifyphonecode_rightMargin"
+        android:orientation="vertical" >
+
+        <!-- 6个输入框 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/veriCode1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLength="1"
+                android:gravity="center"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/veriCode2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLength="1"
+                android:gravity="center"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/veriCode3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLength="1"
+                android:gravity="center"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/veriCode4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLength="1"
+                android:gravity="center"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/veriCode5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLength="1"
+                android:gravity="center"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/veriCode6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLength="1"
+                android:gravity="center"
+                android:inputType="number"/>
+        </LinearLayout>
+        
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/verifyphonecode_btnleftMargin"
+            android:layout_marginRight="@dimen/verifyphonecode_btnrightMargin"
+            android:layout_marginTop="@dimen/verifyphonecode_btntopMargin"
+            android:text="完成"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/skyblue"
+            android:onClick="choosingMajor"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="秒后 重新发送验证码"
+            android:layout_marginTop="@dimen/verifyphonecode_btntopMargin"
+            android:gravity="center"
+            android:textColor="@color/darkGrey"/>
+    </LinearLayout>
+</LinearLayout>

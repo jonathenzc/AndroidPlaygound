@@ -1,0 +1,47 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+	<!-- register界面大小资源 -->
+		<!-- 整体区域边界大小 -->
+	<dimen name="register_topMargin">20dip</dimen>
+	<dimen name="register_leftMargin">60dip</dimen>
+	<dimen name="register_rightMargin">60dip</dimen>
+	<dimen name="register_bottomMargin">20dip</dimen>
+		<!-- 欢迎区域 -->
+		<!-- 文字大小 -->
+    <dimen name="register_welcome1TextSize">50sp</dimen>
+	<dimen name="register_welcome2TextSize">20sp</dimen>
+	
+		<!-- 注册信息区域 -->
+		<!-- 文字大小 -->
+    <dimen name="register_regiButtonTextSize">30sp</dimen>
+	
+		<!-- 第三方登录区域 -->
+		<!-- 文字大小 -->
+	<dimen name="register_DividerSize">1dip</dimen>
+	<dimen name="register_thirdPartyTextSize">20sp</dimen>
+	<dimen name="register_thirdPartyBottomTextSize">12sp</dimen>
+
+	<!-- verifyphonecode界面大小资源 -->
+		<!-- 整体区域边界大小 -->
+	<dimen name="verifyphonecode_leftMargin">20dip</dimen>
+	<dimen name="verifyphonecode_rightMargin">20dip</dimen>
+	<dimen name="verifyphonecode_topMargin">20dip</dimen>
+	<dimen name="verifyphonecode_downMargin">20dip</dimen>
+		<!-- 按钮距离 -->
+	<dimen name="verifyphonecode_btnleftMargin">30dip</dimen>
+	<dimen name="verifyphonecode_btnrightMargin">30dip</dimen>
+	<dimen name="verifyphonecode_btntopMargin">40dip</dimen>
+	<dimen name="verifyphonecode_btndownMargin">20dip</dimen>
+
+	<!-- majorchoosing界面大小资源 -->
+		<!-- 选择专业和学科区域 -->
+	<dimen name="majorchoosing_leftMargin">15dip</dimen>
+	<dimen name="majorchoosing_rightMargin">20dip</dimen>
+	<dimen name="majorchoosing_topMargin">20dip</dimen>
+	<dimen name="majorchoosing_downMargin">20dip</dimen>
+
+	<dimen name="majorchoosing_subjectTopMargin">50dip</dimen>
+</resources>

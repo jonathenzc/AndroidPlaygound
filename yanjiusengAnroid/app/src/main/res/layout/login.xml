@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- 欢迎语布局 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/register_topMargin">
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:text="@string/register_welcome1"
+            android:textSize="@dimen/register_welcome1TextSize"
+            android:gravity="center"
+            android:textColor="@color/skyblue">
+        </TextView>
+
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:text="@string/register_welcome2"
+            android:textSize="@dimen/register_welcome2TextSize"
+            android:gravity="center"
+            android:textColor="@color/skyblue">
+        </TextView>
+
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:text="@string/register_welcome3"
+            android:textSize="@dimen/register_welcome2TextSize"
+            android:gravity="center"
+            android:textColor="@color/skyblue">
+        </TextView>
+    </LinearLayout>
+
+    <!-- 注册信息布局 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/register_topMargin"
+        android:layout_marginLeft="@dimen/register_leftMargin"
+        android:layout_marginRight="@dimen/register_rightMargin">
+        <!-- 手机 密码 -->
+        <!-- 手机 -->
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/register_phone"
+            android:inputType="phone" />
+
+        <!-- 密码 -->
+        <EditText
+            android:id="@+id/pwdEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/register_pwd"
+            android:inputType="textPassword"/>
+
+        <!-- 注册按钮 -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/appstart_login"
+            android:textStyle="bold"
+            android:textSize="@dimen/register_regiButtonTextSize"
+            android:textColor="@color/white"
+            android:background="@color/skyblue"
+            android:onClick="registerChecking"/>
+
+        <!-- 忘记密码按钮 -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_forgetPwd"
+            android:textSize="@dimen/register_thirdPartyTextSize"
+            android:textColor="@color/lightGrey"
+            android:background="#00000000"
+            style="?android:attr/borderlessButtonStyle"  />
+
+        <View android:layout_height="@dimen/register_DividerSize"
+            android:layout_width="wrap_content"
+            android:background="@color/lightGrey" />
+    </LinearLayout>
+
+    <!-- 第三方登录 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/register_topMargin"
+        android:layout_marginLeft="@dimen/register_leftMargin"
+        android:layout_marginRight="@dimen/register_rightMargin">
+
+        <!-- 登录学术圈账号 -->
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight="1"
+            android:text="@string/register_thirdPartyWelcome"
+            android:layout_marginBottom="@dimen/register_bottomMargin"
+            android:textSize="@dimen/register_thirdPartyTextSize"
+            android:gravity="center"
+            android:textColor="@color/darkGrey">
+        </TextView>
+
+        <!-- 分隔符 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View android:layout_height="@dimen/register_DividerSize"
+                android:layout_width="wrap_content"
+                android:background="@color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+
+                android:layout_weight="1"
+                android:text="@string/register_thirdPartyRegister"
+                android:textSize="@dimen/register_thirdPartyBottomTextSize"
+                android:gravity="center_horizontal"
+                android:textColor="@color/lightGrey">
+            </TextView>
+
+            <View android:layout_height="@dimen/register_DividerSize"
+                android:layout_width="wrap_content"
+                android:background="@color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <!-- 第三方登录 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/register_topMargin">
+
+            <TextView
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_weight="1"
+                android:text="@string/register_thirdParty1"
+                android:gravity="center" >
+            </TextView>
+
+            <TextView
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_weight="1"
+                android:text="@string/register_thirdParty2"
+                android:gravity="center" >
+            </TextView>
+
+            <TextView
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_weight="1"
+                android:text="@string/register_thirdParty3"
+                android:gravity="center">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
