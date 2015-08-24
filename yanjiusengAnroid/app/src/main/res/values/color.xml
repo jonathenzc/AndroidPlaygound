@@ -8,6 +8,7 @@
 	<color name="darkGrey">#9b9b9b</color>
 	<color name="lightGrey">#c2c2c2</color>
 	<color name="black">#010101</color>
-
-
+	<color name="btmGrey">#eeeeee</color>
+	<color name="meFragBackground">#E1E0DE</color>
+	<color name="titleBackground">#2B3439</color>
 </resources>

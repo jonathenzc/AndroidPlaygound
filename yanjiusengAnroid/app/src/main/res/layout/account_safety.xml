@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/meFragBackground">
+
+    <!-- 标题布局 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/titleBackground">
+
+        <Button
+            android:src="@drawable/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_safety_back"
+            android:textSize="@dimen/name_change_titleTextSize"
+            android:textColor="@color/white"
+            android:background="#00000000"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="choosingResearchDirection"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/account_safety_title"
+            android:textSize="@dimen/name_change_titleTextSize"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/backbtn"
+            android:src="@drawable/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/> <!-- 图片按钮透明 -->
+    </LinearLayout>
+
+    <!-- 修改密码、绑定邮箱、密保问题 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/personal_info_tabTopMargin">
+
+        <!-- 修改密码 -->
+        <RelativeLayout
+            android:id="@+id/rel_changePwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/personal_info_tv_height"
+                android:layout_marginLeft="@dimen/personal_info_leftMargin"
+                android:gravity="center_vertical"
+                android:text="@string/account_safety_changePwd"
+                android:textSize="@dimen/personal_info_textSize"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <!-- 绑定邮箱 -->
+        <RelativeLayout
+            android:id="@+id/rel_emailBinding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rel_changePwd"
+            android:layout_alignParentLeft="true"
+            android:background="@color/white"
+            android:clickable="true">
+
+            <!-- 分割线 -->
+            <View
+                android:layout_height="1dp"
+                android:layout_width="wrap_content"
+                android:background="@color/lightGrey" />
+
+            <TextView
+                android:id="@+id/btn_emailBinding"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/personal_info_tv_height"
+                android:layout_marginLeft="@dimen/personal_info_leftMargin"
+                android:gravity="center_vertical"
+                android:text="@string/account_safety_emailBinding"
+                android:textSize="@dimen/personal_info_textSize"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <!-- 密保问题 -->
+        <RelativeLayout
+            android:id="@+id/rel_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rel_emailBinding"
+            android:layout_alignParentLeft="true"
+            android:background="@color/white"
+            android:clickable="true">
+
+            <!-- 分割线 -->
+            <View
+                android:layout_height="1dp"
+                android:layout_width="wrap_content"
+                android:background="@color/lightGrey" />
+
+            <TextView
+                android:id="@+id/btn_question"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/personal_info_tv_height"
+                android:layout_marginLeft="@dimen/personal_info_leftMargin"
+                android:gravity="center_vertical"
+                android:text="@string/account_safety_question"
+                android:textSize="@dimen/personal_info_textSize"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/meFragBackground">
+
+    <!-- 标题布局 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/titleBackground">
+
+        <Button
+            android:src="@drawable/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/gender_change_back"
+            android:textSize="@dimen/name_change_titleTextSize"
+            android:textColor="@color/white"
+            android:background="#00000000"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="choosingResearchDirection"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="100"
+            android:gravity="center"
+            android:textSize="@dimen/gender_change_titleTextSize"
+            android:text="@string/gender_change_title"
+            android:textColor="@color/white" />
+
+        <Button
+            android:src="@drawable/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/name_change_save"
+            android:textSize="@dimen/name_change_titleTextSize"
+            android:textColor="@color/white"
+            android:background="#00000000"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="choosingResearchDirection"/>
+    </LinearLayout>
+
+    <!-- 头像 -->
+    <RelativeLayout
+        android:id="@+id/faceLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:clickable="true" >
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/male"
+                android:text="男"/>
+            <RadioButton
+                android:id="@+id/female"
+                android:text="女"/>
+            <RadioButton
+                android:id="@+id/notMention"
+                android:text="不清楚"/>
+        </RadioGroup>
+    </RelativeLayout>
+</LinearLayout>

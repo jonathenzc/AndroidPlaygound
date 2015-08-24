@@ -1,7 +1,9 @@
 package com.example.zhangcheng.yanjiuseng;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.NumberPicker;
 import android.widget.NumberPicker.OnValueChangeListener;
 import android.widget.NumberPicker.OnScrollListener;
@@ -42,4 +44,11 @@ public class MajorChoosingActivity extends Activity implements OnValueChangeList
     public void onValueChange(NumberPicker picker, int oldVal, int newVal) {}
 
     public String format(int value) {return "";}
+
+    //下一步按钮进入选择研究方向界面
+    public void choosingResearchDirection(View v)
+    {
+        Intent in=new Intent(MajorChoosingActivity.this,ResearchDirectionActivity.class);
+        startActivity(in);
+    }
 }

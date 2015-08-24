@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/majorchoosingclosing_topMargin"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/majorchoosingclosing_closing1"
+            android:textColor="@color/skyblue"
+            android:textSize="@dimen/majorchoosingclosing_closingTextSize"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/majorchoosingclosing_closing2"
+            android:textColor="@color/skyblue"
+            android:textSize="@dimen/majorchoosingclosing_closingTextSize"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/majorchoosingclosing_closing3"
+            android:textColor="@color/skyblue"
+            android:textSize="@dimen/majorchoosingclosing_closingTextSize"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/majorchoosing_btntopMargin"
+        android:layout_marginLeft="@dimen/majorchoosing_btnleftMargin"
+        android:layout_marginRight="@dimen/majorchoosing_btnrightMargin"
+        android:gravity="center" >
+
+        <Button
+            android:src="@drawable/backbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/majorchoosingclosing_btn"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:background="@color/skyblue"/>
+    </LinearLayout>
+
+    <!-- 底部区域 -->
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/majorchoosingclosing_rightMargin"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:src="@drawable/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:src="@drawable/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/majorchoosingclosing_bottombtn"
+            android:textSize="25sp"
+            android:textColor="@color/darkGrey"
+            android:background="#00000000"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+
+</LinearLayout>

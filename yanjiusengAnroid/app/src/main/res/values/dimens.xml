@@ -44,4 +44,42 @@
 	<dimen name="majorchoosing_downMargin">20dip</dimen>
 
 	<dimen name="majorchoosing_subjectTopMargin">50dip</dimen>
+
+	<!-- majorchoosingclosing界面大小资源 -->
+		<!-- 选择专业和学科区域 -->
+	<dimen name="majorchoosingclosing_leftMargin">15dip</dimen>
+	<dimen name="majorchoosingclosing_rightMargin">10dip</dimen>
+	<dimen name="majorchoosingclosing_topMargin">90dip</dimen>
+	<dimen name="majorchoosingclosing_downMargin">20dip</dimen>
+
+		<!-- 按钮区域布局区域 -->
+	<dimen name="majorchoosing_btnleftMargin">30dip</dimen>
+	<dimen name="majorchoosing_btnrightMargin">30dip</dimen>
+	<dimen name="majorchoosing_btntopMargin">50dip</dimen>
+		<!-- 结束语文字大小 -->
+	<dimen name="majorchoosingclosing_closingTextSize">24sp</dimen>
+
+	<!-- personal_info界面大小资源 -->
+		<!-- 选项卡之间距离 -->
+	<dimen name="personal_info_tabTopMargin">20dip</dimen>
+
+		<!-- 文本框字体大小 -->
+	<dimen name="personal_info_textSize">24sp</dimen>
+
+		<!-- 文本框字体大小 -->
+	<dimen name="personal_info_leftMargin">20dip</dimen>
+	<dimen name="personal_info_tv_height">50dip</dimen>
+
+	<!-- name_change界面大小资源 -->
+		<!-- 标题文字大小 -->
+	<dimen name="name_change_titleTextSize">20dip</dimen>
+		<!-- 编辑框文字大小 -->
+	<dimen name="name_change_editTextSize">25dip</dimen>
+
+	<!-- gender_change界面大小资源 -->
+		<!-- 标题文字大小 -->
+	<dimen name="gender_change_titleTextSize">20dip</dimen>
+		<!-- 编辑框文字大小 -->
+	<dimen name="gender_change_radioTextSize">25dip</dimen>
+
 </resources>

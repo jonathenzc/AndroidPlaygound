@@ -74,7 +74,7 @@
             android:textSize="@dimen/register_regiButtonTextSize"
             android:textColor="@color/white"
             android:background="@color/skyblue"
-            android:onClick="registerChecking"/>
+            android:onClick="login"/>
 
         <!-- 忘记密码按钮 -->
         <Button

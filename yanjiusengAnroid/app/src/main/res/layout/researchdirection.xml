@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- 标题布局 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/verifyphonecode_topMargin"
+        android:layout_marginLeft="@dimen/verifyphonecode_leftMargin"
+        android:layout_marginRight="@dimen/verifyphonecode_rightMargin"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/backbtn"
+            android:src="@drawable/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"/> <!-- 图片按钮透明 -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="@string/researchdirection_title"
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:id="@+id/addbtn"
+            android:src="@drawable/addbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000" />
+    </LinearLayout>
+
+
+    <!-- 验证码编辑栏 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/verifyphonecode_topMargin"
+        android:layout_marginLeft="@dimen/verifyphonecode_leftMargin"
+        android:layout_marginRight="@dimen/verifyphonecode_rightMargin"
+        android:orientation="vertical" >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/verifyphonecode_btnleftMargin"
+            android:layout_marginRight="@dimen/verifyphonecode_btnrightMargin"
+            android:layout_marginTop="@dimen/verifyphonecode_btntopMargin"
+            android:text="@string/researchdirection_btn"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/skyblue"
+            android:onClick="ChoosingFinished"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/majorchoosing_topMargin"
+        android:gravity="center" >
+
+        <Button
+            android:src="@drawable/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/researchdirection_cancel"
+            android:textSize="25sp"
+            android:textColor="@color/skyblue"
+            android:background="#00000000"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:src="@drawable/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/researchdirection_finish"
+            android:textSize="25sp"
+            android:textColor="@color/skyblue"
+            android:background="#00000000"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+
+    <!-- 研究方向滚动选择器 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+
+        <NumberPicker
+            android:id="@+id/bigRDpicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <NumberPicker
+            android:id="@+id/littleRDpicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

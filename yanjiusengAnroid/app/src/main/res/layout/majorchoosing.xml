@@ -36,7 +36,8 @@
             android:textSize="25sp"
             android:textColor="@color/skyblue"
             android:background="#00000000"
-            style="?android:attr/borderlessButtonStyle"/>
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="choosingResearchDirection"/>
     </LinearLayout>
 
     <LinearLayout

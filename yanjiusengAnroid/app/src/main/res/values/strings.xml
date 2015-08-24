@@ -45,5 +45,93 @@
 		<!-- 滚动选择器确认区域 -->
 	<string name="majorchoosing_cancel">取消</string>
 	<string name="majorchoosing_finish">完成</string>
+    <string name="title_activity_major_choosing_closing">MajorChoosingClosing</string>
+
+	<!-- majorchoosingclosing用到的字符串 -->
+		<!-- 结束语区域区域 -->
+	<string name="majorchoosingclosing_closing1">感谢完成领域分类</string>
+	<string name="majorchoosingclosing_closing2">为方便学术同行联络到您</string>
+	<string name="majorchoosingclosing_closing3">请完善个人信息吧</string>
+		<!-- 按钮区域 -->
+	<string name="majorchoosingclosing_btn">去完善</string>
+		<!-- 底部按钮区域 -->
+	<string name="majorchoosingclosing_bottombtn">以后完善</string>
+    <string name="title_activity_research_direction">ResearchDirectionActivity</string>
+
+	<!-- researchDirection用到的字符串 -->
+		<!-- 标题区域 -->
+	<string name="researchdirection_title">选择研究方向</string>
+		<!-- 按钮区域 -->
+	<string name="researchdirection_btn">完成</string>
+		<!-- 滚动选择器确认区域 -->
+	<string name="researchdirection_cancel">取消</string>
+	<string name="researchdirection_finish">完成</string>
+    <string name="title_activity_academic_circle">AcademicCircle</string>
+
+	<!-- AcademicCircle用到的字符串 -->
+		<!-- 底部选项卡区域 -->
+	<string name="academiccircle_home">学术圈</string>
+	<string name="academiccircle_message">消息</string>
+	<string name="academiccircle_service">服务</string>
+	<string name="academiccircle_me">我</string>
+
+	<!-- fragment_me用到的字符串 -->
+		<!-- 个人信息标签 -->
+	<string name="fragment_me_userName">jonathenzc</string>
+	<string name="fragment_me_nickName">昵称：幸福洋溢的ZC</string>
+	<string name="fragment_me_domain">领域分类</string>
+	<string name="fragment_me_safety">账户安全</string>
+	<string name="fragment_me_purse">积分钱包</string>
+	<string name="fragment_me_achievement">我的成果</string>
+	<string name="fragment_me_setting">设置</string>
+    <string name="title_activity_personal_info">PersonalInfoActivity</string>
+
+	<!-- personal_info用到的字符串 -->
+		<!-- 标题 -->
+	<string name="personal_info_back">&lt; 我</string>
+	<string name="personal_info_title">个人信息</string>
+		<!-- 个人信息标签 -->
+	<string name="personal_info_face">头像</string>
+	<string name="personal_info_name">名字</string>
+	<string name="personal_info_nickname">昵称</string>
+	<string name="personal_info_gender">性别</string>
+	<string name="personal_info_address">地区</string>
+    <string name="title_activity_name_change">nameChangeActivity</string>
+
+	<!-- name_change用到的字符串 -->
+		<!-- 标题 -->
+	<string name="name_change_cancel">取消</string>
+	<string name="name_change_title">名字</string>
+	<string name="name_change_save">保存</string>
+    <string name="title_activity_gender_change">genderChangeActivity</string>
+
+	<!-- gender_change用到的字符串 -->
+		<!-- 标题 -->
+	<string name="gender_change_back">&lt; 个人信息</string>
+	<string name="gender_change_title">性别</string>
+	<string name="gender_change_save">保存</string>
+    <string name="title_activity_account_safety">accountSafetyActivity</string>
+
+	<!-- account_safety用到的字符串 -->
+		<!-- 标题 -->
+	<string name="account_safety_back">&lt; 我</string>
+	<string name="account_safety_title">账户安全</string>
+
+		<!-- 修改区域 -->
+	<string name="account_safety_changePwd">修改密码</string>
+	<string name="account_safety_emailBinding">绑定邮箱</string>
+	<string name="account_safety_question">密保问题</string>
+
+	<!-- password_change用到的字符串 -->
+		<!-- 标题 -->
+	<string name="password_change_back">&lt; 账户安全</string>
+	<string name="password_change_title">修改密码</string>
+	<string name="password_change_save">保存</string>
+
+		<!-- 密码确认区域 -->
+	<string name="password_change_oldpwd">原密码</string>
+	<string name="password_change_newpwd">新密码</string>
+	<string name="password_change_confirmPwd">确认密码</string>
+    <string name="title_activity_change_password">ChangePasswordActivity</string>
 
 </resources>

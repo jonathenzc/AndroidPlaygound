@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/meFragBackground">
+
+    <!-- 标题布局 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/titleBackground">
+
+        <Button
+            android:src="@drawable/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_change_cancel"
+            android:textSize="@dimen/name_change_titleTextSize"
+            android:textColor="@color/white"
+            android:background="#00000000"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="choosingResearchDirection"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/name_change_titleTextSize"
+            android:text="@string/name_change_title"
+            android:textColor="@color/white" />
+
+        <Button
+            android:src="@drawable/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_change_save"
+            android:textSize="@dimen/name_change_titleTextSize"
+            android:textColor="@color/white"
+            android:background="#00000000"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="choosingResearchDirection"/>
+    </LinearLayout>
+
+    <!-- 头像 -->
+    <RelativeLayout
+        android:id="@+id/faceLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:clickable="true" >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/personal_info_leftMargin"
+            android:text="张三"
+            android:textSize="@dimen/name_change_editTextSize"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+</LinearLayout>

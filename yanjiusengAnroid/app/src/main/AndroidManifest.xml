@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.zhangcheng.yanjiuseng" >
 
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -43,6 +46,38 @@
         <activity
             android:name=".MajorChoosingActivity"
             android:label="@string/title_activity_major_choosing" >
+        </activity>
+        <activity
+            android:name=".MajorChoosingClosing"
+            android:label="@string/title_activity_major_choosing_closing" >
+        </activity>
+        <activity
+            android:name=".ResearchDirectionActivity"
+            android:label="@string/title_activity_research_direction" >
+        </activity>
+        <activity
+            android:name=".AcademicCircle"
+            android:label="@string/title_activity_academic_circle" >
+        </activity>
+        <activity
+            android:name=".PersonalInfoActivity"
+            android:label="@string/title_activity_personal_info" >
+        </activity>
+        <activity
+            android:name=".nameChangeActivity"
+            android:label="@string/title_activity_name_change" >
+        </activity>
+        <activity
+            android:name=".genderChangeActivity"
+            android:label="@string/title_activity_gender_change" >
+        </activity>
+        <activity
+            android:name=".accountSafetyActivity"
+            android:label="@string/title_activity_account_safety" >
+        </activity>
+        <activity
+            android:name=".PasswordChangeActivity"
+            android:label="@string/title_activity_change_password" >
         </activity>
     </application>
 
