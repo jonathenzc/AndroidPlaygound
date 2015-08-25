@@ -60,7 +60,7 @@
             android:label="@string/title_activity_academic_circle" >
         </activity>
         <activity
-            android:name=".PersonalInfoActivity"
+            android:name=".PersonalInfoFragment"
             android:label="@string/title_activity_personal_info" >
         </activity>
         <activity

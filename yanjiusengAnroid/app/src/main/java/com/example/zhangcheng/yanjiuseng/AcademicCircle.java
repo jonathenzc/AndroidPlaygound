@@ -6,11 +6,17 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-public class AcademicCircle extends FragmentActivity implements OnClickListener {
+public class AcademicCircle extends FragmentActivity implements OnClickListener  {
+
+//    //用于Fragment逐级跳转
+//    private static AcademicCircle mInstance;
+//    private BackHandledFragment mBackHandedFragment;
+//    private Button btnSecond;
 
     // 四个tab布局
     private RelativeLayout homeLayout, messageLayout, serviceLayout, meLayout;
@@ -32,6 +38,13 @@ public class AcademicCircle extends FragmentActivity implements OnClickListener 
         initTab();
     }
 
+//    public static AcademicCircle getInstance() {
+//        if (mInstance == null) {
+//            mInstance = new AcademicCircle();
+//        }
+//        return mInstance;
+//    }
+
     /**
      * 初始化UI
      */
@@ -46,6 +59,7 @@ public class AcademicCircle extends FragmentActivity implements OnClickListener 
         messageLayout.setOnClickListener(this);
         serviceLayout.setOnClickListener(this);
         meLayout.setOnClickListener(this);
+
 
         //获取图片
         homeImg = (ImageView) findViewById(R.id.iv_home);
@@ -219,4 +233,9 @@ public class AcademicCircle extends FragmentActivity implements OnClickListener 
 
         currentFragment = fragment;
     }
+
+//    @Override
+//    public void setSelectedFragment(BackHandledFragment selectedFragment) {
+//        this.mBackHandedFragment = selectedFragment;
+//    }
 }

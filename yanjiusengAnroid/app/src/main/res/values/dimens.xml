@@ -82,4 +82,16 @@
 		<!-- 编辑框文字大小 -->
 	<dimen name="gender_change_radioTextSize">25dip</dimen>
 
+
+	<!-- fragment_me界面大小资源 -->
+		<!-- 选项卡之间距离 -->
+	<dimen name="fragment_me_tabTopMargin">20dip</dimen>
+
+		<!-- 文本框字体大小 -->
+	<dimen name="fragment_me_textSize">24sp</dimen>
+
+		<!-- 文本框字体大小 -->
+	<dimen name="fragment_me_leftMargin">20dip</dimen>
+	<dimen name="fragment_me_tv_height">50dip</dimen>
+
 </resources>
